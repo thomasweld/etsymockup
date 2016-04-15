@@ -1,0 +1,73 @@
+.container {
+  width: 972px;
+  margin: 0 auto; }
+
+a {
+  text-decoration: none;
+  color: #0092BD; }
+
+.logo_text {
+  display: inline-block;
+  font-family: 'Droid Serif', serif;
+  color: orange;
+  font-size: 30px; }
+
+.logo_left {
+  float: left;
+  overflow: auto; }
+
+.logo_right {
+  float: right;
+  overflow: auto; }
+
+.logo_right ul li {
+  list-style: none;
+  display: inline-block;
+  margin: auto 20px; }
+
+.cart_div {
+  text-align: center;
+  border-left: 1px gray solid; }
+
+nav {
+  clear: both;
+  font-family: arial;
+  color: gray; }
+
+nav ul li {
+  display: inline;
+  padding: 4px 4px; }
+
+.main {
+  background-color: beige;
+  overflow: auto; }
+
+.left_sidebar {
+  width: 200px;
+  height: 600px;
+  float: left; }
+  .left_sidebar ul li {
+    list-style: none;
+    line-height: 24px; }
+
+.product_column {
+  float: right;
+  width: 700px; }
+
+.card {
+  overflow: auto;
+  width: 240px;
+  padding: 8px;
+  float: left; }
+
+.product_image {
+  width: 225px;
+  display: block; }
+
+.product_seller {
+  float: left; }
+
+.product_price {
+  float: right; }
+
+/*# sourceMappingURL=main.css.map */
