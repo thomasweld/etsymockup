@@ -9873,15 +9873,16 @@ products.forEach(function (product) {
   var imgsrc = product.Images[0].url_570xN;
   console.log(imgsrc);
   // product name variables
-  var product_name = product.title.substring(0, 25);
+  var product_name = product.title.substring(0, 22);
   console.log(product_name);
   // product seller name
   var product_seller = product.Shop.shop_name;
   console.log(product_seller);
   // product price
-  var product_price = console.log(product_price);
+  var product_price = product.price;
+  console.log(product_price);
 
-  var card = '\n  <div class="card">\n    <div class="product_image" style="background-image: url(\'' + imgsrc + '\'); background-size: auto 100%; background-position: center; background-repeat: no-repeat;">\n    <button class="ad_button">Ad</button>\n    </div>\n    <div class="product_text_area">\n      <span class="product_title">' + product_name + '...</span>\n      <br>\n      <span class="product_seller">Slangin Bags</span>\n      <span class="product_price">$200</span>\n    </div>\n  </div>\n  ';
+  var card = '\n  <div class="card">\n    <div class="product_image" style="background-image: url(\'' + imgsrc + '\'); background-size: auto 100%; background-position: center; background-repeat: no-repeat;">\n    <button class="ad_button">Ad</button>\n    </div>\n    <div class="product_text_area">\n      <span class="product_title">' + product_name + '...</span>\n      <br>\n      <span class="product_seller">' + product_seller + '</span>\n      <span class="product_price">$' + product_price + '</span>\n    </div>\n  </div>\n  ';
 
   (0, _jquery2['default'])('.product_column').append(card);
 });
