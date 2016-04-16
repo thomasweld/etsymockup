@@ -8,7 +8,6 @@ var products = etsydata.results;
 // logs products array to the screen
 console.log(products);
 
-
 products.forEach ( function ( product ) {
   // creating variables for each piece of data we are pulling from api
   // image variable imgsrc
@@ -23,27 +22,26 @@ products.forEach ( function ( product ) {
   // product price
   var product_price = product.price;
   console.log(product_price);
+  // product url
+  var product_url = product.url;
+  console.log(product_url);
 
   var card = `
-  <div class="card">
-    <div class="product_image" style="background-image: url('${imgsrc}'); background-size: auto 100%; background-position: center; background-repeat: no-repeat;">
-    <button class="ad_button">Ad</button>
+  <a href="${product_url}">
+    <div class="card">
+      <div class="product_image" style="background-image: url('${imgsrc}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+      <button class="ad_button">Ad</button>
+      </div>
+      <div class="product_text_area">
+        <span class="product_title">${product_name}...</span>
+        <br>
+        <span class="product_seller">${product_seller}</span>
+        <span class="product_price">$${product_price}</span>
+      </div>
     </div>
-    <div class="product_text_area">
-      <span class="product_title">${product_name}...</span>
-      <br>
-      <span class="product_seller">${product_seller}</span>
-      <span class="product_price">$${product_price}</span>
-    </div>
-  </div>
+  </a>
   `;
 
   $('.product_column').append(card);
 
 });
-
-// productListings.length
-
-
-
-    // <img src="${imgsrc}" alt="" class="product_image"/>
