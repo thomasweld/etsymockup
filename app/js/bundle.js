@@ -9864,26 +9864,31 @@ var _etsydata2 = _interopRequireDefault(_etsydata);
 // let products equal etsy results array
 var products = _etsydata2['default'].results;
 
-// console.log(etsydata);
-
+// logs products array to the screen
 console.log(products);
 
-// console.log(products[0].Images[0]);
-//
-// console.log(products[0].Images[0].url_570xN);
-
-var imgsrc = '';
-
 products.forEach(function (product) {
+  // creating variables for each piece of data we are pulling from api
+  // image variable imgsrc
   var imgsrc = product.Images[0].url_570xN;
   console.log(imgsrc);
+  // product name variables
+  var product_name = product.title.substring(0, 25);
+  console.log(product_name);
+  // product seller name
+  var product_seller = product.Shop.shop_name;
+  console.log(product_seller);
+  // product price
+  var product_price = console.log(product_price);
 
-  var card = '\n  <div class="card">\n    <img src="' + imgsrc + '" alt="" class="product_image"/>\n    <span class="product_name">Product Name</span>\n    <br>\n    <span class="product_seller">Slangin Bags</span>\n    <span class="product_price">$200</span>\n  </div>\n  ';
+  var card = '\n  <div class="card">\n    <div class="product_image" style="background-image: url(\'' + imgsrc + '\'); background-size: auto 100%; background-position: center; background-repeat: no-repeat;">\n    <button class="ad_button">Ad</button>\n    </div>\n    <div class="product_text_area">\n      <span class="product_title">' + product_name + '...</span>\n      <br>\n      <span class="product_seller">Slangin Bags</span>\n      <span class="product_price">$200</span>\n    </div>\n  </div>\n  ';
 
   (0, _jquery2['default'])('.product_column').append(card);
 });
 
 // productListings.length
+
+// <img src="${imgsrc}" alt="" class="product_image"/>
 
 },{"./etsydata":2,"jquery":1}]},{},[3])
 
