@@ -1,36 +1,79 @@
 .container {
-  width: 972px;
-  margin: 0 auto; }
+  width: 1000px;
+  margin: 0 auto;
+  overflow: auto; }
+
+heaader {
+  overflow: auto; }
 
 a {
   text-decoration: none;
-  color: #0092BD; }
+  color: #51B5CC; }
 
 ul {
   padding: 0px; }
 
+.logo_div {
+  overflow: auto;
+  float: left; }
+
 .logo_text {
-  display: inline-block;
   font-family: 'Droid Serif', serif;
   color: orange;
-  font-size: 30px; }
+  font-size: 30px;
+  margin: 26px 10px; }
 
 .logo_left {
   float: left;
-  overflow: auto; }
+  overflow: auto;
+  width: 400px; }
 
-.logo_right {
+.search_wrapper {
   float: right;
-  overflow: auto; }
+  margin-top: 32px;
+  border: 1px solid #DEDAD7;
+  border-radius: 2px;
+  background-color: #FBFBF9; }
 
-.logo_right ul li {
+input[type="text"] {
+  width: 200px;
+  border: none;
+  background-color: #FBFBF9; }
+
+input[type="button"] {
+  background-color: #34A7C2;
+  border: none;
+  color: white;
+  font-size: 16px; }
+
+.links_right {
+  float: right;
+  margin-top: 16px;
+  margin-right: 10px; }
+
+.links_right ul li {
   list-style: none;
   display: inline-block;
-  margin: auto 20px; }
+  padding: 4px 14px; }
+
+.sign_in {
+  float: right;
+  border: 2px solid #51B5CC;
+  border-radius: 2px;
+  margin-bottom: 4px; }
+
+body > div > header > div > div.links_right > ul > li:nth-child(1) > a {
+  line-height: 24px; }
 
 .cart_div {
+  float: right;
   text-align: center;
-  border-left: 1px gray solid; }
+  border-left: 1px #DEDAD7 solid;
+  margin: 24px 0px 0px 8px;
+  padding: 4px 4px 4px 12px; }
+
+.cart_image {
+  width: 18px; }
 
 nav {
   clear: both;
@@ -45,10 +88,31 @@ nav ul li {
   background-color: #F4F5F0;
   overflow: auto; }
 
+.titles {
+  clear: both; }
+
+.left_sidebar_title {
+  width: 200px;
+  height: 20px;
+  float: left;
+  background-color: #ffffff;
+  padding: 8px;
+  margin: 6px; }
+
+.right_sidebar_title {
+  float: right;
+  width: 740px;
+  height: 20px;
+  padding: 8px;
+  margin: 6px; }
+
 .left_sidebar {
   width: 200px;
   height: 600px;
-  float: left; }
+  float: left;
+  background-color: #ffffff;
+  padding: 8px;
+  margin: 8px; }
   .left_sidebar ul li {
     list-style: none;
     line-height: 24px; }
