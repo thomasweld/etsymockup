@@ -9902,7 +9902,7 @@ products.forEach(function (product) {
 
 function add_results() {
 
-  var righ_side_title = '\n    <a href="#">All categories</a> > "whiskey" (' + products.length + ')\n  ';
+  var righ_side_title = '\n    <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n    All categories</a> > "whiskey" (' + products.length + ')\n  ';
   (0, _jquery2['default'])('.right_sidebar_title').append(righ_side_title);
 };
 
