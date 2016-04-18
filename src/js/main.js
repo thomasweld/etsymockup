@@ -17,7 +17,7 @@ products.forEach ( function ( product ) {
   var product_name = product.title.substring(0, 16);
   console.log(product_name);
   // product seller name
-  var product_seller = product.Shop.shop_name.substring(0, 14);
+  var product_seller = product.Shop.shop_name.substring(0, 12);
   console.log(product_seller);
   // product price
   var product_price = product.price;
