@@ -142,11 +142,11 @@ nav ul li {
 
 .left_sidebar_title {
   width: 200px;
-  height: 20px;
   float: left;
-  background-color: #ffffff;
-  padding: 8px;
-  margin: 6px;
+  background-color: #F4F5F0;
+  padding: 0px;
+  margin-top: 16px;
+  font-weight: bold;
 }
 
 .right_sidebar_title {
@@ -159,15 +159,14 @@ nav ul li {
 
 .left_sidebar {
   width: 200px;
-  height: 600px;
   float: left;
   background-color: #ffffff;
-  padding: 8px;
-  margin: 8px;
+  padding: 4px;
+  margin: 16px 0px 0px 0px;
 
   ul li {
     list-style: none;
-    line-height: 24px;
+    padding: 4px;
   }
 }
 
@@ -178,7 +177,7 @@ nav ul li {
 
 .card {
   overflow: auto;
-  width: 220px;
+  width: 160px;
   padding: 0px;
   border-radius: 2px;
   float: left;
@@ -204,8 +203,8 @@ nav ul li {
 }
 
 .product_image {
-  width: 220px;
-  height: 220px;
+  width: 160px;
+  height: 160px;
   display: block;
 }
 

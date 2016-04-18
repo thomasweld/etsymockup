@@ -45,3 +45,14 @@ products.forEach ( function ( product ) {
   $('.product_column').append(card);
 
 });
+
+
+function add_results() {
+
+  var righ_side_title = `
+    <a href="#">All categories</a> > "whiskey" (${products.length})
+  `;
+  $('.right_sidebar_title').append(righ_side_title);
+};
+
+add_results();

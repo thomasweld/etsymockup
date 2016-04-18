@@ -9890,6 +9890,14 @@ products.forEach(function (product) {
   (0, _jquery2['default'])('.product_column').append(card);
 });
 
+function add_results() {
+
+  var righ_side_title = '\n    <a href="#">All categories</a> > "whiskey" (' + products.length + ')\n  ';
+  (0, _jquery2['default'])('.right_sidebar_title').append(righ_side_title);
+};
+
+add_results();
+
 },{"./etsydata":2,"jquery":1}]},{},[3])
 
 
