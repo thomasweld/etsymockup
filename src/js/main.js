@@ -14,10 +14,10 @@ products.forEach ( function ( product ) {
   var imgsrc = product.Images[0].url_570xN;
   console.log(imgsrc);
   // product name variables
-  var product_name = product.title.substring(0, 22);
+  var product_name = product.title.substring(0, 16);
   console.log(product_name);
   // product seller name
-  var product_seller = product.Shop.shop_name;
+  var product_seller = product.Shop.shop_name.substring(0, 14);
   console.log(product_seller);
   // product price
   var product_price = product.price;
@@ -34,9 +34,9 @@ products.forEach ( function ( product ) {
         <img src="./images/heart.png" alt="" class="heart_image"/>
       </div>
       <div class="product_text_area">
-        <span class="product_title">${product_name}...</span>
+        <span class="product_title">${product_name}..</span>
         <br>
-        <span class="product_seller">${product_seller}</span>
+        <span class="product_seller">${product_seller}..</span>
         <span class="product_price">$${product_price}</span>
       </div>
     </div>
