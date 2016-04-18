@@ -30,7 +30,8 @@ products.forEach ( function ( product ) {
   <a href="${product_url}">
     <div class="card">
       <div class="product_image" style="background-image: url('${imgsrc}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-      <button class="ad_button">Ad</button>
+        <button class="ad_button">Ad</button>
+        <img src="./images/heart.png" alt="" class="heart_image"/>
       </div>
       <div class="product_text_area">
         <span class="product_title">${product_name}...</span>
@@ -43,6 +44,16 @@ products.forEach ( function ( product ) {
   `;
 
   $('.product_column').append(card);
+
+  var product_card = $('.card');
+
+  product_card.on('mouseenter', function() {
+      $(this).find('.heart_image').addClass('visible');
+  });
+
+  product_card.on('mouseleave', function() {
+      $(this).find('.heart_image').removeClass('visible');
+  });
 
 });
 

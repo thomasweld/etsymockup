@@ -9885,9 +9885,19 @@ products.forEach(function (product) {
   var product_url = product.url;
   console.log(product_url);
 
-  var card = '\n  <a href="' + product_url + '">\n    <div class="card">\n      <div class="product_image" style="background-image: url(\'' + imgsrc + '\'); background-size: cover; background-position: center; background-repeat: no-repeat;">\n      <button class="ad_button">Ad</button>\n      </div>\n      <div class="product_text_area">\n        <span class="product_title">' + product_name + '...</span>\n        <br>\n        <span class="product_seller">' + product_seller + '</span>\n        <span class="product_price">$' + product_price + '</span>\n      </div>\n    </div>\n  </a>\n  ';
+  var card = '\n  <a href="' + product_url + '">\n    <div class="card">\n      <div class="product_image" style="background-image: url(\'' + imgsrc + '\'); background-size: cover; background-position: center; background-repeat: no-repeat;">\n        <button class="ad_button">Ad</button>\n        <img src="./images/heart.png" alt="" class="heart_image"/>\n      </div>\n      <div class="product_text_area">\n        <span class="product_title">' + product_name + '...</span>\n        <br>\n        <span class="product_seller">' + product_seller + '</span>\n        <span class="product_price">$' + product_price + '</span>\n      </div>\n    </div>\n  </a>\n  ';
 
   (0, _jquery2['default'])('.product_column').append(card);
+
+  var product_card = (0, _jquery2['default'])('.card');
+
+  product_card.on('mouseenter', function () {
+    (0, _jquery2['default'])(this).find('.heart_image').addClass('visible');
+  });
+
+  product_card.on('mouseleave', function () {
+    (0, _jquery2['default'])(this).find('.heart_image').removeClass('visible');
+  });
 });
 
 function add_results() {
